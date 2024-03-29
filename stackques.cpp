@@ -3,28 +3,28 @@
 #include<stack>
 using namespace std;
 
-// void solve(stack<int> &s,int target){
-//     //base
-//     if(s.empty()){
-//         s.push(target);
-//         return;
-//     }
-//     int topelement=s.top();
-//     s.pop();
-//     //recursive call
-//     solve(s,target);
-//     s.push(topelement);
-// }
+void solve(stack<int> &s, int target){
+    //base
+    if(s.empty()){
+        s.push(target);
+        return;
+    }
+    int topelement=s.top();
+    s.pop();
+    //recursive call
+    solve(s,target);
+    s.push(topelement);
+}
 
-// void insertatbottom(stack<int> &s){
-//     if(s.empty()){
-//         cout<<"stack is empty"<<endl;
-//         return;
-//     }
-//     int target=s.top();
-//     s.pop();
-//     solve(s,target);
-//     }
+void insertatbottom(stack<int> &s){
+    if(s.empty()){
+        cout<<"stack is empty"<<endl;
+        return;
+    }
+    int target=s.top();
+    s.pop();
+    solve(s,target);
+    }
 
 
 
@@ -93,22 +93,20 @@ public:
 int main(){
 
 
-// stack <int> s;
-// s.push(11); 
-// s.push(22); 
-// s.push(33); 
-// s.push(44); 
-// s.push(55); 
+stack <int> s;
+s.push(11); 
+s.push(22); 
+s.push(33); 
+s.push(44); 
+s.push(55); 
 
-// insertatbottom(s);
+insertatbottom(s);
 
-// while(!s.empty()){
-//     cout<<s.top()<<" ";
-//     s.pop();
-// }
-// cout<<endl;
-
-
+while(!s.empty()){
+    cout<<s.top()<<" ";
+    s.pop();
+}
+cout<<endl;
 
 
 
@@ -116,6 +114,15 @@ int main(){
 
 
 
+
+Solution solution;
+    string testString = "{[()]}";
+    if(solution.isValid(testString)) {
+        cout << "The string is valid." << endl;
+    }
+    else {
+        cout << "The string is not valid." << endl;
+    }
 
 
 
