@@ -39,8 +39,43 @@ q1.push(temp);
 }
 
 
+//reverse k element 
+ void reverseK(queue <int> &q2,int k){
+   
+    stack <int> s2;
+    int count=0;
+    int n=q2.size();
+     if(k==0 || k>n)
+        return;
+    while (!q2.empty())
+    {
+        int temp=q2.front();
+         q2.pop();
+         s2.push(temp);
+         count++;
 
+         if(count==k)
+         break;
+    }
+    
+    //stack to queue 
+    while(!s2.empty()){
+        int temp=s2.top();
+        s2.pop();
+         q2.push(temp);
+    }
 
+    count=0;
+    while(!q2.empty() && n-k!=0){
+        int temp=q2.front();
+         q2.pop();
+         q2.push(temp);
+         count++;
+
+         if(count==n-k)
+          break;
+    }
+ }
 
 
 int main(){
@@ -90,4 +125,31 @@ while(!q1.empty()){
     q1.pop();
 }
 cout<<endl; 
+
+
+
+queue<int> q2;
+q2.push(5);
+q2.push(15);
+q2.push(25);
+q2.push(35);
+q2.push(45);
+
+reverseK(q2,3);  //reverse upto 3 element
+
+
+
+cout<<" reverse  partial element "<<endl;
+while(!q2.empty()){
+    cout<<q2.front()<<" ";
+    q2.pop();
+}
+cout<<endl; 
+
+
+
+
+
+
+
 }

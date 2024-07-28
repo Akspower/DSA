@@ -14,8 +14,8 @@ for(int round=1;round<n;round++){
             swap(arr[j],arr[j+1]);
         }
     }
-}
-//print
+} 
+//printing
 for(int i=0;i<n;i++){
     cout<<arr[i]<<" ";
 }
