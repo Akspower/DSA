@@ -16,7 +16,7 @@ int main(){
  for(int i=0;i<3;i++){
     cout << b[i]<<" "<<endl;
  }
-//array allways pass by reference it means value also change in main 
+//array allways pass by reference it means value also change in main array
 
 
 
