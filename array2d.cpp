@@ -11,7 +11,7 @@ for(int j=0;j<col;j++){
 return false;
 }
 
-
+//transpose
 void transpose(int a[][2],int row,int col){
     for(int i=0;i<row;i++){
         for(int j=0;j<col;j++){
