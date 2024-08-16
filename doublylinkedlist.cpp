@@ -97,7 +97,7 @@ cout<<getlength(head);
 cout<<endl;
 
 
-
+//pointing to head
 insertathead(head,22);
 insertathead(head,24);
 insertathead(head,26);
