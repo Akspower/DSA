@@ -101,17 +101,17 @@ cout<<endl;
 insertathead(head,22);
 insertathead(head,24);
 insertathead(head,26);
-print(head);
+    print(head);
 
 inserattail(tail,30);
 inserattail(tail,40);
 inserattail(tail,50);
-print(head);
+     print(head);
 
 insertatposition(tail,head,3,55);
 insertatposition(tail,head,2,75);
 insertatposition(tail,head,1,100);
-print(head);
+       print(head);
 }
 
 //double
