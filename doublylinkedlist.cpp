@@ -113,5 +113,3 @@ insertatposition(tail,head,2,75);
 insertatposition(tail,head,1,100);
        print(head);
 }
-
-//double
