@@ -17,7 +17,8 @@ void transpose(int a[][2],int row,int col){
         for(int j=0;j<col;j++){
             swap(a[i][j],a[j][i]);
         }
-        
+          
+          
     }
 }
 
